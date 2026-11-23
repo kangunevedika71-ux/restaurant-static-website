@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<section class="menu-header">
+    <h1>About Green Bowl Kitchen</h1>
+    <p>Fresh food, honest ingredients, made with care.</p>
+</section>
+
+<!-- OUR STORY -->
+<section class="about-story">
+    <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+            Green Bowl Kitchen started with a simple idea: healthy food should
+            taste amazing. Paste your own story here, such as when you started,
+            why you love healthy cooking, and what makes your kitchen special.
+        </p>
+        <p>
+            Every morning our team prepares fresh vegetables, grains and
+            proteins from scratch, so every bowl you eat is made that day.
+        </p>
+    </div>
+    <img src="{% static 'img/1.jpeg' %}" alt="Our kitchen" class="about-img">
+</section>
+
+<!-- VALUES -->
+<section class="about-values">
+    <h2>What We Believe</h2>
+    <div class="values-grid">
+        <div class="value">
+            <h3>🥗 Fresh Daily</h3>
+            <p>Nothing frozen, nothing reheated. Cooked fresh every morning.</p>
+        </div>
+        <div class="value">
+            <h3>🌱 Locally Sourced</h3>
+            <p>Vegetables and grains from nearby farms whenever possible.</p>
+        </div>
+        <div class="value">
+            <h3>💪 Balanced Nutrition</h3>
+            <p>Protein, fiber and healthy fats in every bowl.</p>
+        </div>
+        <div class="value">
+            <h3>♻️ Eco Friendly</h3>
+            <p>Compostable packaging and minimal food waste.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="about-team">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+        <div class="member">
+            <img src="{% static 'img/aa.jpeg' %}" alt="Head Chef">
+            <h3>Chef Name</h3>
+            <p>Head Chef</p>
+        </div>
+        <div class="member">
+            <img src="{% static 'img/0.jpeg' %}" alt="Nutritionist">
+            <h3>Name</h3>
+            <p>Nutrition Expert</p>
+        </div>
+        <div class="member">
+            <img src="{% static 'img/r.jpeg' %}" alt="Manager">
+            <h3>Name</h3>
+            <p>Restaurant Manager</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+    <h2>Come hungry, leave happy.</h2>
+    <a href="{% url 'menu' %}" class="btn btn-light">See the Menu</a>
+    <a href="{% url 'reservation' %}" class="btn btn-light">Book a Table</a>
+</section>
+
+{% endblock %}

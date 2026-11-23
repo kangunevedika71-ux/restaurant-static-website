@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+
+<section class="menu-header">
+    <h1>Our Menu</h1>
+    <p>Fresh ingredients, made daily. Vegan and high-protein options available.</p>
+</section>
+
+<!-- BOWLS -->
+<section class="menu-section">
+    <h2>Signature Bowls</h2>
+    <div class="menu-grid">
+        <div class="menu-card">
+            <img src="{% static 'img/imgm1.jpeg' %}" alt="Grilled Chicken Bowl">
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Grilled Chicken Bowl</h3>
+                    <span class="price">₹299</span>
+                </div>
+                <p>Chicken, quinoa, avocado, broccoli, cherry tomatoes.</p>
+                <span class="badge">High Protein</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="{% static 'img/a.jpeg' %}" alt="Protein Power Bowl">
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Protein Power Bowl</h3>
+                    <span class="price">₹249</span>
+                </div>
+                <p>Chickpeas, cottage cheese, boiled egg, greens, nuts.</p>
+                <span class="badge">High Protein</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="{% static 'img/img3.jpeg' %}" alt="Rainbow Veggie Bowl">
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Rainbow Veggie Bowl</h3>
+                    <span class="price">₹199</span>
+                </div>
+                <p>Red cabbage, carrots, cucumber, brown rice, tahini.</p>
+                <span class="badge vegan">Vegan</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SMOOTHIES -->
+<section class="menu-section">
+    <h2>Smoothies</h2>
+    <div class="menu-grid">
+        <div class="menu-card">
+            <img src="{% static 'img/c.jpeg' %}" alt="Berry Smoothie Bowl">
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Berry Smoothie Bowl</h3>
+                    <span class="price">₹179</span>
+                </div>
+                <p>Blueberries, raspberries, almonds, chia seeds.</p>
+                <span class="badge vegan">Vegan</span>
+            </div>
+        </div>
+        <!-- copy a card block to add more -->
+    </div>
+</section>
+
+<p class="menu-note">
+    Please tell us about any allergies. You can customize any bowl with extra protein or toppings.
+</p>
+
+{% endblock %}

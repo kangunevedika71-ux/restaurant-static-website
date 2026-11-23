@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+<!-- 1. HERO: text on the left, image on the right -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Green Bowl Kitchen</h1>
+        <p>Fresh, healthy bowls made daily.</p>
+    </div>
+    <img src="{% static 'img/homem.jpeg' %}" alt="Green Bowl Kitchen" class="home-img">
+</section>
+
+<!-- 2. TEXT BELOW THE HERO -->
+<section class="intro">
+    <h2>Good Food That Loves You Back</h2>
+    <p>
+        At Green Bowl Kitchen, we believe healthy eating should be colorful,
+        filling and full of flavor. Every bowl is made fresh each morning with
+        crisp vegetables, lean proteins, wholesome grains and bold, natural
+        dressings, with no shortcuts and no heavy processing.
+    </p>
+    <p>
+        Whether you want a protein-packed lunch after the gym, a light veggie
+        bowl, or a refreshing fruit smoothie, our menu has something for
+        you. Vegan and high-protein options are always available.
+    </p>
+</section>
+
+<!-- 3. GRID OF 6 RECIPE IMAGES -->
+<section class="recipes">
+    <h2>Our Speciality</h2>
+    <div class="grid">
+        <div class="item">
+            <img src="{% static 'img/imgm1.jpeg' %}" alt="Recipe 1">
+            <p>Grilled Chicken Bowl</p>
+        </div>
+        <div class="item">
+            <img src="{% static 'img/a.jpeg' %}" alt="Recipe 2">
+            <p>Protein Power Bowl</p>
+            
+        </div>
+        <div class="item">
+            <img src="{% static 'img/img3.jpeg' %}" alt="Recipe 3">
+            <p>Rainbow Veggie Bowl</p>
+        </div>
+        <div class="item">
+            <img src="{% static 'img/img4.jpeg' %}" alt="Recipe 4">
+            <p>Salmon Salad</p>
+        </div>
+        <div class="item">
+            <img src="{% static 'img/b.jpeg' %}" alt="Recipe 5">
+            <p>Fruit Smoothie Bowl</p>
+        </div>
+        <div class="item">
+            <img src="{% static 'img/img6.jpg' %}" alt="Recipe 6">
+            <p>Quinoa Chickpea Bowl</p>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,512 @@
+/* Navigation Bar */
+
+nav {
+    background-color: #054f30;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    gap: 40px;
+}
+
+
+/* Navigation Links */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+
+/* Hover Effect */
+
+nav a:hover {
+    color: #d8f3dc;
+    background-color: #40916c;
+    border-radius: 8px;
+}
+
+.home-img {
+    display: block;
+    width: 850px;
+    /* try 300px for smaller, 550px for bigger */
+    height: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+body {
+    font-size: 18px;
+}
+
+.intro h2 {
+    font-size: 2.4rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.recipes h2 {
+    font-size: 2.4rem;
+}
+
+.item p {
+    font-size: 1.3rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* Text below the hero */
+
+.intro {
+    padding: 20px 40px;
+    max-width: 900px;
+}
+
+
+/* Recipes grid */
+
+.recipes {
+    padding: 20px 40px 40px;
+}
+
+.recipes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 3 / 3;
+    /* horizontal shape */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.item p {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+
+/* Footer */
+
+footer {
+    background: #234a35;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+footer {
+    background: #234a35;
+    color: #fff;
+    padding: 40px 40px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #cfe3d5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-header {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.menu-header h1 {
+    font-size: 2.8rem;
+    color: #234a35;
+    margin-bottom: 8px;
+}
+
+.menu-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.menu-section {
+    padding: 20px 40px;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    color: #234a35;
+    border-bottom: 3px solid #f4a223;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.menu-card {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-info {
+    padding: 16px;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.price {
+    color: #f4a223;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.menu-info p {
+    margin: 8px 0 12px;
+    color: #555;
+}
+
+.badge {
+    background: #e8f3ec;
+    color: #234a35;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge.vegan {
+    background: #dff3d4;
+}
+
+.menu-note {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    .menu-section {
+        padding: 20px;
+    }
+}
+
+.booking {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 20px 40px 50px;
+    align-items: start;
+}
+
+.booking-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+    display: block;
+    font-weight: 600;
+    margin: 14px 0 6px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd8d0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #234a35;
+    box-shadow: 0 0 0 3px rgba(35, 74, 53, 0.15);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.booking-form button {
+    margin-top: 24px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.booking-info {
+    background: #e8f3ec;
+    padding: 28px;
+    border-radius: 14px;
+}
+
+.booking-info h3 {
+    color: #234a35;
+    margin: 18px 0 6px;
+}
+
+.booking-info h3:first-child {
+    margin-top: 0;
+}
+
+.booking-info ul {
+    padding-left: 18px;
+}
+
+.success-msg {
+    background: #dff3d4;
+    color: #234a35;
+    text-align: center;
+    padding: 14px;
+    margin: 10px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .booking {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #234a35;
+    color: #fff;
+}
+
+
+/* STORY */
+
+.about-story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: #234a35;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.about-img {
+    width: 45%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+/* VALUES */
+
+.about-values {
+    background: #e8f3ec;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-values h2,
+.about-team h2 {
+    font-size: 2.2rem;
+    color: #234a35;
+    margin-bottom: 24px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.value {
+    background: #fff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* TEAM */
+
+.about-team {
+    padding: 40px;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.member img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h3 {
+    margin: 6px 0 2px;
+}
+
+.member p {
+    color: #666;
+    margin: 0;
+}
+
+
+/* CTA */
+
+.about-cta {
+    background: #234a35;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-cta .btn {
+    margin: 10px 6px 0;
+}
+
+@media (max-width: 800px) {
+    .about-story {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .values-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
